@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="test.css" >
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style> 
+    input[type=text], input[type=password],input[type=email] {
+  border: none;
+  border-bottom: 2px solid ;
+  width: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="headerlogo"> <img src="./assets/images/logo.svg" alt="tes" >
+  </div> 
+  <div class="headerbutton">
+    <button onclick="location.href='register.html'"class="button registerbutton">REGISTER</button>
+    <button onclick="location.href='login.html'" class="button loginbutton">LOGIN </button>
+     
+
+  </div>
+</div>
+
+<div class="navigation">
+    <a href="home.html">HOME</a>
+  <div class= "dropdown">
+    <div class="dropbutton">MENU</div>
+  <div class="dropdowncontent">
+  <a href="menu.html">BURGER</a>
+  <a href="#">RICE & PASTA</a>
+  <a href="#">SEAFOOD</a>
+  </div>
+  </div>
+    <a href="about.html">ABOUT US</a>
+</div> 
+
+<div class="registerpage">
+    <div class="registertext">
+        <h1>Register</h1><br><br>
+       
+    </div>
+ <div class="registerpass">
+    <form onsubmit="return false">
+      <label for="nem">Name</label> <br>
+      <input type="text" id="name" name="name"> <br> <br>
+      <label for="eml2">Email</label> <br>
+      <input type="email" id="email2" name="email2"> <br> <br>
+     <p>Gender</p><br>
+      <input type="radio" id="gender" name="gender" value="Male"required="required">
+  <label for="male">Male</label>
+  <input type="radio" id="gender" name="gender" value="Female">
+  <label for="female">Female</label><br><br>
+<div class="dropdownlist">
+  <label for="city">City</label> <br><br>
+  <select id="city" name="citylist">
+    <option value="jakarta">Jakarta</option>
+    <option value="bandung">Bandung</option>
+    <option value="bali">Bali</option>
+    <option value="malang">Malang</option>
+  </select><br><br>
+</div>
+
+       <label for="psw2">Password</label> <br>
+       <input type="password" id="password2" name="password2"> <br><br>
+
+      <label for="psw3">Confirm Password</label> <br>
+       <input type="password" id="password3" name="password3"> <br><br>
+      <button onclick="validateRegister()" class="registerbutton1" type="submit">Register</button>
+
+    </form>
+  </div>
+  
+</div>
+
+<div class="footer">
+    <div class= "socialmedia">
+      <a href="https://www.twitter.com" target="_blank"><img src="./assets/images/twitter.png"></a> 
+      <a href="https://www.facebook.com" target="_blank"><img src="./assets/images/facebook.png"></a> 
+      <a href="https://www.instagram.com" target="_blank"><img src="./assets/images/instagram.png"></a> <br><br>
+      <p>Copyright @ 2021 (Singgih Tulus Makmud). All Rights Reserved</p>
+    </div>
+  
+  </div>
+  
+  
+  </body>
+  </html>

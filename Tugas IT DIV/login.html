@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="test.css" >
+    <title>Document</title>
+    <script src="./script.js"></script>
+    <style> 
+    input[type=text], input[type=password],input[type=email] {
+  border: none;
+  border-bottom: 2px solid ;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="headerlogo"> <img src="./assets/images/logo.svg" alt="tes" >
+  </div> 
+  <div class="headerbutton">
+    <button onclick="location.href='register.html'"class="button registerbutton">REGISTER</button>
+    <button onclick="location.href='login.html'" class="button loginbutton">LOGIN </button>
+     
+  </div>
+</div>
+
+<div class="navigation">
+    <a href="home.html">HOME</a>
+  <div class= "dropdown">
+    <div class="dropbutton">MENU</div>
+  <div class="dropdowncontent">
+  <a href="menu.html">BURGER</a>
+  <a href="#">RICE & PASTA</a>
+  <a href="#">SEAFOOD</a>
+  </div>
+  </div>
+    <a href="about.html">ABOUT US</a>
+</div> 
+
+<div class="loginpage">
+    <div class="logintext">
+        <h1>Login</h1><br><br>
+       
+    </div>
+ <div class="emailpass">
+    <form onsubmit="return false">
+      <label for="eml">Email</label> <br>
+      <input type="email" id="email" name="email"> <br> <br>
+      <label for="psw">Password</label> <br>
+      <input type="password" id="password" name="password"> <br>
+      
+       <input type="submit" class="loginbutton2" onclick="validateLogin()" value="Login" >
+      <p>Want to join us? Register <a href="register.html">Here! </a></p>
+    </form>
+  </div>
+  
+</div>
+
+<div class="footer">
+    <div class= "socialmedia">
+      <a href="https://www.twitter.com" target="_blank"><img src="./assets/images/twitter.png"></a> 
+      <a href="https://www.facebook.com" target="_blank"><img src="./assets/images/facebook.png"></a> 
+      <a href="https://www.instagram.com" target="_blank"><img src="./assets/images/instagram.png"></a> <br><br>
+      <p>Copyright @ 2021 (Singgih Tulus Makmud). All Rights Reserved</p>
+    </div>
+  
+  </div>
+  
+  
+  </body>
+  </html>
